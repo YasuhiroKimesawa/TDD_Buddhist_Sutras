@@ -10,6 +10,6 @@ public class Dollar {
 
   // multiplier・・・乗数
   void times(int multiplier){
-    amount = amount * 2;
+    amount = amount * multiplier;
   }
 }
