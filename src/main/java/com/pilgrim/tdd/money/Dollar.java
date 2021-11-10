@@ -10,7 +10,6 @@ public class Dollar {
 
   // multiplier・・・乗数
   Dollar times(int multiplier){
-    amount *= multiplier;
-    return null;
+    return new Dollar(amount * multiplier);
   }
 }
