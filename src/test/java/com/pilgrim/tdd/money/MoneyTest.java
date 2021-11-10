@@ -9,9 +9,9 @@ public class MoneyTest {
   public void testMultiplication(){
     Dollar five = new Dollar(5);
     Dollar product = five.times(2);
-    Assertions.assertEquals(10, five.amount);
+    Assertions.assertEquals(10, product.amount);
 
     product = five.times(3);
-    Assertions.assertEquals(15, five.amount);
+    Assertions.assertEquals(15, product.amount);
   }
 }
