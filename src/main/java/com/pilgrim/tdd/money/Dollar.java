@@ -2,6 +2,8 @@ package com.pilgrim.tdd.money;
 
 public class Dollar {
 
+  int amount;
+
   public Dollar(int amount) {
   }
 
