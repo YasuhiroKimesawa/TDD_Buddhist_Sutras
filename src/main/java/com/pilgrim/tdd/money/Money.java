@@ -1,14 +1,16 @@
 package com.pilgrim.tdd.money;
 
-abstract class Money {
+class Money {
   protected int amount;
   protected String currency;
-
-  abstract Money times(int multiplier);
 
   public Money(int amount, String currency){
     this.amount = amount;
     this.currency = currency;
+  }
+
+  Money times(int multiplier){
+    return null;
   }
 
   String currency(){
