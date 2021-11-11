@@ -2,13 +2,13 @@ package com.pilgrim.tdd.money;
 
 public class Dollar extends Money{
 
-  public Dollar(int amount) {
+  public Dollar(int amount, String currency) {
     this.amount = amount;
-    currency = "USD";
+    this.currency = currency;
   }
 
   // multiplier・・・乗数
   Money times(int multiplier){
-    return new Dollar(amount * multiplier);
+    return Money.dollar(amount * multiplier);
   }
 }
