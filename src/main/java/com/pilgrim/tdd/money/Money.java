@@ -9,8 +9,9 @@ class Money {
     this.currency = currency;
   }
 
+  // multiplier・・・乗数
   Money times(int multiplier){
-    return null;
+    return new Money(amount * multiplier, currency);
   }
 
   String currency(){
