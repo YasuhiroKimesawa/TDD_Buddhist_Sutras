@@ -9,6 +9,6 @@ public class Franc extends Money{
 
   // multiplier・・・乗数
   Money times(int multiplier){
-    return new Franc(amount * multiplier, null);
+    return Money.franc(amount * multiplier);
   }
 }
