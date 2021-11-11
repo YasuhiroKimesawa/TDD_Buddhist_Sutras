@@ -7,7 +7,7 @@ public class MoneyTest {
   // Multiplication・・・乗算
   @Test
   public void testMultiplication(){
-    Dollar five = new Dollar(5);
+    Dollar five = Money.dollar(5);
     Assertions.assertEquals(new Dollar(10), five.times(2));
 
     Assertions.assertEquals(new Dollar(15), five.times(3));
