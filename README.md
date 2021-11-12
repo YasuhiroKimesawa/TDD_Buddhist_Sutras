@@ -16,3 +16,4 @@
 - [x] testFrancMultiplicationを削除する？
 - [ ] $5 + $5 = $10
 - [ ] $5 + $5 がMoneyを返す
+- [ ] Bank.reduce(Money)
