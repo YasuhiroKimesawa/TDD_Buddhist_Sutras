@@ -29,8 +29,13 @@ public class MoneyTest {
 
   @Test
   public void testSimpleAddition(){
-    Money sum = Money.dollar(5).plus(Money.dollar(5));
+    Money five = Money.dollar(5);
 
-    Assertions.assertEquals(Money.dollar(10), sum);
+    Expression sum = five.plus(five);
+    Bank bank = new Bank();
+    // reduce 式を単純な形に変形する
+    Money reduced = bank.reduce(sum, "USD");
+
+    Assertions.assertEquals(Money.dollar(10), reduced);
   }
 }
