@@ -10,7 +10,7 @@ class Money implements Expression{
   }
 
   // multiplier・・・乗数
-  Expression times(int multiplier){
+  public Expression times(int multiplier){
     return new Money(amount * multiplier, currency);
   }
 
