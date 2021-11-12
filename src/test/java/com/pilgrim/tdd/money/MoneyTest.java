@@ -93,13 +93,13 @@ public class MoneyTest {
   @Test
   public void testSumPlusMoney(){
     Expression fiveBucks = Money.dollar(5);
-    Expression tenFrancs = Money.dollar(10);
+    Expression tenFrancs = Money.franc(10);
 
     Bank bank = new Bank();
     bank.addRate("CHF", "USD", 2);
     Expression sum = new Sum(fiveBucks, tenFrancs).plus(fiveBucks);
     Money result = bank.reduce(sum, "USD");
 
-    Assertions.assertEquals(Money.dollar(5), result);
+    Assertions.assertEquals(Money.dollar(15), result);
   }
 }
