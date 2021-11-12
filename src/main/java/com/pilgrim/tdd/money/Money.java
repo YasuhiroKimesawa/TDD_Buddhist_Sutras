@@ -10,11 +10,11 @@ class Money implements Expression{
   }
 
   // multiplier・・・乗数
-  Money times(int multiplier){
+  Expression times(int multiplier){
     return new Money(amount * multiplier, currency);
   }
 
-  Expression plus(Money addend) {
+  Expression plus(Expression addend) {
     return new Sum(this, addend);
   }
 
