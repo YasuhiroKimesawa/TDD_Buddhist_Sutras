@@ -1,5 +1,7 @@
 package com.pilgrim.tdd.money2;
 
+import java.util.Objects;
+
 class Dollar {
 
   int amount;
@@ -11,4 +13,10 @@ class Dollar {
   Dollar times(int multiplier){
     return new Dollar(amount * multiplier);
   }
+
+  @Override
+  public boolean equals(Object o) {
+    return true;
+  }
+
 }
