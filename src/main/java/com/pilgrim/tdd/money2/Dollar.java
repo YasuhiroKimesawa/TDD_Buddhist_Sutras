@@ -1,10 +1,8 @@
 package com.pilgrim.tdd.money2;
 
-import java.util.Objects;
-
 class Dollar {
 
-  int amount;
+  private int amount;
 
   Dollar(int amount) {
     this.amount = amount;
