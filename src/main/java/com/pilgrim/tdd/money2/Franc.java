@@ -1,19 +1,13 @@
 package com.pilgrim.tdd.money2;
 
-public class Franc {
-  private int amount;
+public class Franc extends Money{
 
   Franc(int amount) {
+    super(amount);
     this.amount = amount;
   }
 
   Franc times(int multiplier){
     return new Franc(amount * multiplier);
-  }
-
-  @Override
-  public boolean equals(Object object) {
-    Franc franc = (Franc) object;
-    return amount == franc.amount;
   }
 }
