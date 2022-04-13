@@ -4,6 +4,7 @@ abstract class Money {
 
   protected int amount;
   abstract Money times(int multiplier);
+  abstract String currency();
 
   public Money(int amount) {
     this.amount = amount;
