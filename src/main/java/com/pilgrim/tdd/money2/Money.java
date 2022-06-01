@@ -21,7 +21,7 @@ class Money {
   @Override
   public boolean equals(Object object) {
     Money money = (Money) object;
-    return amount == money.amount && getClass().equals(money.getClass());
+    return amount == money.amount && currency().equals(money.currency());
   }
 
   public static Money dollar(int amount) {
@@ -30,5 +30,9 @@ class Money {
 
   public static Money franc(int amount) {
     return new Franc(amount, "CHF");
+  }
+
+  public String toString(){
+    return amount + " " + currency;
   }
 }
