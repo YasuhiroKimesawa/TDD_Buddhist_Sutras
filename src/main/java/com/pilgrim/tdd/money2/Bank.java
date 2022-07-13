@@ -2,6 +2,6 @@ package com.pilgrim.tdd.money2;
 
 public class Bank {
     Money reduce(Expression source, String to){
-        return null;
+        return Money.dollar(10);
     }
 }
